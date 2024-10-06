@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header */
+        header {
+            background:#555;
+            color:#f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            color:white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        header nav ul li a:hover {
+            background-color:white;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-image: url(./i3.jpg); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .banner button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .features .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Other Sections */
+        .section {
+            padding: 50px 20px;
+            background-color: #f7f7f7;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer .logo {
+            flex: 1;
+        }
+        .footer .links {
+            display: flex;
+            flex: 2;
+            justify-content: space-between;
+        }
+        .footer .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer .links ul li {
+            margin: 5px 0;
+        }
+        .footer .links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .auth-buttons {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .footer .auth-buttons button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .register {
+            background-color: #007bff;
+            color: white;
+        }
+        .login {
+            background-color: #e7e7e7;
+            color: black;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div>
+            <button>Login</button>
+            <button style="background-color: #007bff; color:#f0f0f0;">Register</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Banner Section -->
+<section class="banner">
+    
+    <h1>The largest community of photo enthusiasts</h1>
+    <button>Join Today</button>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Snap photos and share like <br>never before</h2>
+    <div class="feature">
+        <h3>Sed ut perspiciatis</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae eros ut nisi vulputate sagittis.</p>
+        <button style="background-color: #007bff; color:#f0f0f0;" >Learn More</button>
+    </div>
+    <div class="feature">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Consectetur adipiscing elit. Nulla facilisi. Proin fermentum, elit non tristique elementum.</p>
+        <button style="background-color: #007bff; color:#f0f0f0;">Learn More</button>
+    </div>
+    <div class="feature">
+        <h3>Nemo enim ipsam</h3>
+        <p>Commodo lectus eget, tempus purus. Phasellus sit amet tellus sit amet ligula ullamcorper consequat.</p>
+        <button style="background-color: #007bff; color:#f0f0f0;">Learn More</button>
+    </div>
+    <div class="feature">
+        <h3>Sed ut perspiciatis</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae eros ut nisi vulputate sagittis.</p>
+        <button style="background-color: #007bff; color:#f0f0f0;">Learn More</button>
+    </div>
+</section>
+
+<!-- Image Section -->
+<section class="section">
+    <h2>Have you ever posted any photo on social media?</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, non, doloribus aut illum iusto pariatur dolor voluptates quam consequuntur architecto accusantium aliquam eos sunt saepe qui officia molestiae adipisci animi!</p>
+    <div class="content">
+        <div class="text">
+            <h3>Sed ut perspiciatis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies ligula in augue dignissim consectetur.</p>
+            <h3>Sed ut perspiciatis</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             <h3>Sed ut perspiciatis</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img src="./i2.jpg" alt="Building Image" height="100px"; width="200px">
+        
+    </div>
+</section>
+
+<!-- Photo Styles Section -->
+<section class="features">
+    <h2>Make your photos more stylish</h2>
+    <p>Upscale.media offers multiple scaling options, allowing users to choose the degree of enhancement that best suits their needs. Whether it's doubling the resolution with a 2x upscale or achieving even greater clarity with a 4x upscale, our platform empowers users to customize their image enhancement experience according to their preferences. With these versatile scaling options, users can effortlessly elevate the resolution of their images to meet various requirements, from web optimization to high-quality printing, ensuring unparalleled flexibility and adaptability.</p>
+    <div class="feature">
+        <img src="./i4.webp" alt="Photo 1" height="100px"; width="200px">
+        <h3>Sed ut perspiciatis</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+    </div>
+    <div class="feature">
+        <img src="./i5.jpg" alt="Photo 2" height="100px"; width="200px">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Quisque consectetur libero ac lectus faucibus scelerisque.</p>
+    </div>
+    <div class="feature">
+        <img src="./i3.jpg" alt="Photo 3" height="100px"; width="200px">
+        <h3>Nemo enim ipsam</h3>
+        <p>Vestibulum feugiat dui eget magna tincidunt.</p>
+    </div>
+</section>
+
+<!-- Free Trial Section -->
+<section class="section">
+    <h2>Ready to take a free trial?</h2>
+    <center>
+        <p>Upscale.media offers multiple scaling options, allowing users to choose the degree of enhancement that best suits their needs. Whether it's doubling the resolution with a 2x upscale or achieving even greater clarity with a 4x upscales</p>
+    </center>
+    <center>
+    <form>
+        <table>
+           <div class="input-group">
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Last name" required>
+        </div>
+        <div class="input-group">
+            <input type="email" placeholder="Email address" required>
+            <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Create password" required>
+        </div>
+        <button style="background-color: #007bff; color:#f0f0f0;"type="submit">Register</button>
+        </table>
+    </form>
+    </center>
+    
+</section>
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <h2>Logo</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Live Share</a></li>
+                    <li><a href="#">Video Record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Featured Articles</a></li>
+                    <li><a href="#">The Forum</a></li>
+                    <li><a href="#">Live Events</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            <div class="auth-buttons">
+                <button class="register">Register</button>
+                <button class="login">Log In</button>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="copyright">
+                &copy; Photo, Inc. 2019. We love our users!
+            </div>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
